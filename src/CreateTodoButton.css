@@ -1,0 +1,40 @@
+.CreateTodoButton {
+    background-color: #61DAFA ;
+    box-shadow: 0rem 0.5rem 2.5rem rgba(97, 218, 250, 0.5) ;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 2.4rem;
+    right: 2.4rem;
+    font-weight: bold;
+    color: #FAFAFA;
+    justify-content: center;
+    align-items: center;
+    height: 6.4rem;
+    width: 6.4rem;
+    font-size: 3.2rem;
+
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transition: .3s ease ;
+    -webkit-transition: .3s ease ;
+    -moz-transition: .3s ease ;
+    -ms-transition: .3s ease ;
+    -o-transition: .3s ease ;
+}
+
+.CreateTodoButton:hover {
+    transform: rotate(224deg);
+    -webkit-transform: rotate(224deg);
+    -moz-transform: rotate(224deg);
+    -ms-transform: rotate(224deg);
+    -o-transform: rotate(224deg);
+}
