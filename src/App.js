@@ -20,7 +20,7 @@ function App() {
 
   const completedTodos = todos.filter(todo =>
     !!todo.completed).length;
-  const totalTodos = !!todos.length;
+  const totalTodos = todos.length;
 
   const serchedTodos = todos.filter(
       (todo) => {
