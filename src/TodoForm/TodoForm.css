@@ -1,0 +1,66 @@
+/* Estilos para el formulario */
+form {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para la etiqueta */
+  label {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 2.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* Estilos para el área de texto */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  /* Estilos para el contenedor de botones */
+  .Todoform-buttonContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para los botones */
+  .TodoForm-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Estilos específicos para el botón de Cancelar */
+  .TodoForm-button--cancel {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  /* Estilos específicos para el botón de Crear */
+  .TodoForm-button--add {
+    background-color: #68afd8;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto de hover para el botón de Crear */
+  .TodoForm-button--add:hover {
+    background-color: #45a049;
+  }
