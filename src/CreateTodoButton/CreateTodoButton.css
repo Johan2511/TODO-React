@@ -17,6 +17,7 @@
     align-items: center;
     height: 6.4rem;
     width: 6.4rem;
+    z-index: 1;
     font-size: 3.2rem;
 
     transform: rotate(0);
