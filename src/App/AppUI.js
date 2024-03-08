@@ -1,6 +1,5 @@
 import React from 'react';
-import { TodoCounter } from '../TodoCounter';
-import { TodoSearch } from '../TodoSearch';
+import TodoHeader from '../Todoheader';
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { TodosLoading } from '../TodosLoading';
@@ -10,6 +9,8 @@ import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoForm } from '../TodoForm'; 
 import { Modal } from '../Modal';
 import { TodoContext } from '../TodoContext';
+import { TodoCounter } from '../TodoCounter';
+import { TodoSearch } from '../TodoSearch';
 
 
 function AppUI() {
@@ -29,8 +30,19 @@ function AppUI() {
             } = React.useContext(TodoContext);
     return (
         <>
-          <TodoCounter />
-          <TodoSearch />
+          <TodoHeader >
+          
+            <TodoCounter 
+            totalTodos={totalTodos}
+            completedTodos={completedTodos}/>
+
+            <TodoSearch 
+            searchValue={searchValue}
+            setSearchValue={setSearchValue}/>  
+          
+          </TodoHeader>
+
+            
 
               <TodoList>
                 {loading  && (
