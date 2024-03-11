@@ -17,7 +17,7 @@ function useTodos() {
         !!todo.completed).length;
       const totalTodos = todos.length;
     
-      const serchedTodos = todos.filter(
+      const searchedTodos = todos.filter(
           (todo) => {
             const todoText = todo.text.toLowerCase();
             const searchText = searchValue.toLowerCase();
@@ -60,7 +60,7 @@ function useTodos() {
             totalTodos,
             searchValue,
             setSearchValue,
-            serchedTodos,
+            searchedTodos,
             completeTodo,
             addTodo,
             deleteTodo,

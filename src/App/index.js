@@ -12,18 +12,6 @@ import { TodoCounter } from '../TodoCounter';
 import { TodoSearch } from '../TodoSearch';
 import { Modal } from '../Modal';
 
-// const defaultTodos = [
-//   { text: 'cortar cebolla' , completed: true},
-//   { text: 'Tomar el curso de Intro a React.js' , completed: false},
-//   { text: 'Llorar con la llorona' , completed: false},
-//   { text: 'aprender ingles' , completed: false},
-//   { text: 'aprender a bailar' , completed: true},
-//   { text: 'Salir a bailar' , completed: false},
-// ]
-
-// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
-
-// localStorage.removeItem('TODOS_V1');
 
 function App() {
 
@@ -35,7 +23,7 @@ function App() {
     totalTodos,
     searchValue,
     setSearchValue,
-    serchedTodos,
+    searchedTodos,
     completeTodo,
     deleteTodo,
     openModal,
@@ -57,26 +45,24 @@ function App() {
       
       </TodoHeader>
 
-          <TodoList>
-            {loading  && (
-              <>
-            <TodosLoading />
-            <TodosLoading />
-            <TodosLoading />
-            </>
-            )}
-            {error  && <TodosError/>}
-            {(!loading && serchedTodos.length === 0) && <EmptyTodos/>}
+      <TodoList 
+        error={error}
+        loading={loading}
+        searchedTodos={searchedTodos}
+        onError={() => {<TodosError/>}}
+        onLoading={() => {<TodosLoading/>}}
+        onEmpty={() => {<EmptyTodos/>}}
+        render= {todo => (
+          <TodoItem 
+          key={todo.text} 
+          text={todo.text}
+          completed={todo.completed}
+          onComplete={() => completeTodo(todo.text)} 
+          onDelete={() => deleteTodo(todo.text)} />
+        )}
+      
+      />
 
-            {serchedTodos.map(todo => (
-              <TodoItem 
-              key={todo.text} 
-              text={todo.text}
-              completed={todo.completed}
-              onComplete={() => completeTodo(todo.text)} 
-              onDelete={() => deleteTodo(todo.text)} />
-            ))}
-        </TodoList>
 
       <CreateTodoButton
         setOpenModal={setOpenModal} />
