@@ -1,7 +1,7 @@
 import React from 'react';
 import './TodoSearch.css';
 
-function TodoSearch({searchValue, setSearchValue} ) {
+function TodoSearch({searchValue, setSearchValue, loading} ) {
  
     
     return (
@@ -13,11 +13,11 @@ function TodoSearch({searchValue, setSearchValue} ) {
         // console.log(event)
         // console.log(event.target)
         // console.log(event.target.value)
-
         setSearchValue(event.target.value);
-
       }
-      }/>
+    }
+    disabled={loading}
+      />
     );
   }
 
