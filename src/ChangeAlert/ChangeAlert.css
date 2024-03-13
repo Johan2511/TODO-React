@@ -1,0 +1,42 @@
+.ModalBackground {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ModalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .ModalContent p {
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+  }
+
+  .ModalContent p span{
+    font-size:2.5rem;
+    text-align: center;
+  }
+  
+  .ModalContent button {
+    background-color: #68afd8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ModalContent button:hover {
+    background-color: #45a049;
+  }

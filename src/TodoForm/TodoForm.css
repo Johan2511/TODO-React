@@ -49,8 +49,8 @@ form {
   
   /* Estilos específicos para el botón de Cancelar */
   .TodoForm-button--cancel {
-    background-color: #ddd;
-    color: #333;
+    background-color:  rgb(238, 90, 90);
+    color: #fff;
   }
   
   /* Estilos específicos para el botón de Crear */
@@ -63,4 +63,8 @@ form {
   /* Efecto de hover para el botón de Crear */
   .TodoForm-button--add:hover {
     background-color: #45a049;
+  }
+
+  .TodoForm-button--cancel:hover {
+    background-color: red;
   }
