@@ -2,8 +2,7 @@ import React from 'react';
 import './TodoForm.css';
 
 function TodoForm({addTodo,setOpenModal}) {
-    const [newTodoValue, setNewTodoValue] = React.
-    useState('');
+    const [newTodoValue, setNewTodoValue] = React.useState('');
 
     const onSubmit = (event)=> {
         event.preventDefault();

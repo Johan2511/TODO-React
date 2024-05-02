@@ -7,7 +7,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render
 (
-    <App saludo="Buenas" nombre="Johana" />
+    <App />
 );
     
     
@@ -47,4 +47,4 @@ root.render
                 // const AppWithSaludo = withSaludo(App)('wenas')
                 
                 
-                {/* <AppWithSaludo  nombre="Johan" />, */}
+                /* <AppWithSaludo  nombre="Johan" />, */
